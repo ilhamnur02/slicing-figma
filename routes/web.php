@@ -3,5 +3,17 @@
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('Dashboard');
+});
+
+Route::get('/approval', function () {
+    return view('ApprovalPage');
+});
+
+Route::get('/approved-view', function () {
+    return view('ApprovedDocumentView');
+});
+
+Route::get('/lanjutan', function () {
+    return view('Lanjutan');
 });
