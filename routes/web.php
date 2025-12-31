@@ -17,3 +17,6 @@ Route::get('/approved-view', function () {
 Route::get('/lanjutan', function () {
     return view('Lanjutan');
 });
+use App\Http\Controllers\DashboardController;
+
+Route::get('/dashboard', [DashboardController::class, 'index']);
