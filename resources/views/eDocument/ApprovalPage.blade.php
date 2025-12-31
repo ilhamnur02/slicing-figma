@@ -106,7 +106,7 @@
 }
 
 .content-header h2 {
-    font-size: 18px;
+    font-size: 28px;
 }
 
 .content-header span {
