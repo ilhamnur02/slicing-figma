@@ -1,9 +1,14 @@
 <?php
+use App\Models\Document;
+
+Route::get('/test-document', function () {
+    return Document::all();
+});
 
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
-    return view('Dashboard');
+    return view('edocument.Dashboard');
 });
 
 Route::get('/approval', function () {
