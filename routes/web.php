@@ -3,19 +3,19 @@
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
-    return view('Dashboard.blade.php');
+    return view('eDocument.Dashboard');
 });
 
 Route::get('/approval', function () {
-    return view('ApprovalPage');
+    return view('eDocument.ApprovalPage');
 });
 
 Route::get('/approved-view', function () {
-    return view('ApprovedDocumentView');
+    return view('eDocument.ApprovedDocumentView');
 });
 
 Route::get('/lanjutan', function () {
-    return view('Lanjutan');
+    return view('eDocument.Lanjutan');
 });
 use App\Http\Controllers\DashboardController;
 

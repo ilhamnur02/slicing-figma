@@ -109,18 +109,26 @@
     font-size: 28px;
 }
 
+.header-title{
+    display: flex;
+    align-items: baseline;
+    gap: 12px;
+}
+
 .content-header span {
     font-size: 12px;
     color: #666;
+    margin-left: 10px;
 }
 
 .btn {
     background: #0b1fae;
     color: #fff;
-    padding: 7px 15px;
+    padding: 8px 15px;
     border-radius: 4px;
-    font-size: 13px;
+    font-size: 13px;  
     cursor: pointer;
+    text-decoration: none;
 }
 
 /* ===== TABLE AREA ===== */
@@ -187,30 +195,29 @@ th {
         </div>
 
         <div class="menu">
-            <h4>FOLDERS</h4>
-            <a href="#">Create Document</a>
+            <h8> <a href="#">📁 FOLDERS</a></h8><br>
 
-            <h4>Approval</h4>
+            <h4> <a href="#">✏️ Create Document</a> </h4>
+
+            <h4> <a href="#">✔️ Approval</a> </h4>
             <a href="#">Need Approval</a>
             <a href="#">Approved</a>
             <a href="#">Wait To Approve</a>
 
-            <h4>Inbox</h4>
-            <a href="#">Inbox</a>
+            <h4> <a href="#">✉️ Inbox</a> </h4>
 
-            <h4>Help</h4>
-            <a href="#">Help</a>
+            <h4> <a href="#">❓ Help</a> </h4>
         </div>
     </div>
 
     <!-- CONTENT -->
     <div class="content">
         <div class="content-header">
-            <div>
+            <div class="header-title"> 
                 <h2>Approved Document</h2>
-                <span>list data approved document</span>
+                <span> list data approved document</span>
             </div>
-            <div class="btn">Excel</div>
+            <a href="dashboard.php" class="btn">Excel</a>
         </div>
 
         <div class="table-wrapper">
