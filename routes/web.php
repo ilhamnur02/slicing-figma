@@ -3,7 +3,7 @@
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
-    return view('Dashboardblade');
+    return view('Dashboard.blade.php');
 });
 
 Route::get('/approval', function () {
